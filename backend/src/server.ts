@@ -20,6 +20,10 @@ io.on("connection",(socket) =>{
         io.to(room).emit("chatMSG",name+" connected!")
     })
 
+      socket.on("disconnect", () => {
+        console.log("User disconnected:", socket.id);
+    });
+
 })
 
 
