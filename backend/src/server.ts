@@ -11,8 +11,8 @@ const io = new Server(httpServer,{cors:{origin:"http://localhost:3000"}})
 
 io.on("connection",(socket) =>{
     
-    socket.on("chatMSG", ({name,room,msg})=>{
-        io.to(room).emit("chatMSG",name+":"+msg)
+    socket.on("chatMSG", ({name,room,message})=>{
+        io.to(room).emit("chatMSG",name+":"+message)
     })
 
     socket.on("joinRoom",({room,name})=>{
