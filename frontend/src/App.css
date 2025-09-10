@@ -16,4 +16,6 @@
 .messagesContainer{
   background-color: black;
   color: white;
+  width: 30%;
+  height: 70%;
 }
