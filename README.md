@@ -20,7 +20,7 @@
 
 ## Main Idea About Chat Apps
 
-- First of all need to you add listener to backend server with ```bash io.on("connection",socket) ```.(Remember ```bash .on ``` adds listener.)
+- First of all you need to add listener to backend server with ```bash io.on("connection",socket) ```.(Remember ```bash .on ``` adds listener.)
 - Then ; when socket connected, it adds listener to socket with socket.on("<YOUR_KEY>",Params).That means "I am listening <YOUR_KEY>".
 - Lets look at the frontend.
 - We defined const socket = io("<BACKEND_URL>").This is User's socket.
